@@ -18,7 +18,7 @@
 - 🐍 **[Telemetry Engine (`ratings_pulse.py`)](telemetry-engine/ratings_pulse.py)** — *Automated weekly scraper & 10-theme NLP classifier.*
 - 🛡️ **[No-Show Fairness Shield](fairness-engine/no_show_fairness_engine.py)** — *50m geofence lock, 180s dwell timer & 1-tap auto-reversal.*
 - ⚡ **[Idempotent Booking Service](booking-service/idempotent_booking_api.py)** — *Distributed idempotency & transactional outbox pattern.*
-- ⚙️ **[Automated Monday Cron Action](.github/workflows/ratings_pulse_automation.yml)** — *Weekly GitHub Actions execution.*
+- ⚙️ **[Automated Monday Cron Action](automation/ratings_pulse_automation.yml)** — *Weekly GitHub Actions execution.*
 
 ---
 
@@ -163,7 +163,7 @@ RP-12: Native Google In-App Review Flow Integration (Android Eng)
 
 ## ⚙️ CI/CD Automation (GitHub Actions)
 
-This repository includes a scheduled GitHub Actions workflow [`.github/workflows/ratings_pulse_automation.yml`](.github/workflows/ratings_pulse_automation.yml) running on cron:
+This repository includes a scheduled GitHub Actions workflow [`automation/ratings_pulse_automation.yml`](automation/ratings_pulse_automation.yml) running on cron:
 - **Schedule:** Every Monday at `03:00 UTC` (**08:30 AM IST**).
 - Automatically triggers `telemetry-engine/ratings_pulse.py`.
 - Generates `pulse_digest.md` and commits the updated telemetry back to the repository.

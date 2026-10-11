@@ -74,23 +74,20 @@ For MoveInSync, where $N \approx 115,000$ and $r = 4.3$:
 
 ```mermaid
 graph LR
-    subgraph Bucket A: App Defects
-        A1[Midnight Date Picker Drift]
-        A2[Shuttle 2-Step UX Bloat]
-        A3[Fleet Map Clutter]
-        A4[Owner: Mobile + Backend Eng]
+    subgraph BucketA ["Bucket A: App Defects (Mobile + Backend Eng)"]
+        A1["Midnight Date Picker Drift"]
+        A2["Shuttle 2-Step UX Bloat"]
+        A3["Fleet Map Clutter"]
     end
-    subgraph Bucket B: Ops Failures
-        B1[Driver Background GPS Loss]
-        B2[Uncalibrated ETA Jumps]
-        B3[Silent Vehicle Re-routing]
-        B4[Owner: Transport Ops + Driver App]
+    subgraph BucketB ["Bucket B: Ops Failures (Transport Ops + Driver App)"]
+        B1["Driver Background GPS Loss"]
+        B2["Uncalibrated ETA Jumps"]
+        B3["Silent Vehicle Re-routing"]
     end
-    subgraph Bucket C: Policy Gaps
-        C1[No-Show Salary Deductions]
-        C2[Zero-Grace Geofence Drops]
-        C3[Strict Cancellation Penalties]
-        C4[Owner: Customer Success + Product]
+    subgraph BucketC ["Bucket C: Policy Gaps (Customer Success + Product)"]
+        C1["No-Show Salary Deductions"]
+        C2["Zero-Grace Geofence Drops"]
+        C3["Strict Cancellation Penalties"]
     end
 ```
 

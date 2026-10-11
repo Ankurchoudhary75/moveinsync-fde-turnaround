@@ -62,20 +62,20 @@ Because Google Play applies recency weighting to newer ratings, executive engine
 
 ```mermaid
 graph TD
-    subgraph Bucket A: App Defects [Owner: Mobile & Backend Eng]
-        A1[Midnight Date-Picker Drift]
-        A2[Shuttle 2-Step UX Bloat]
-        A3[Fleet Map Vehicle Clutter]
+    subgraph BucketA ["Bucket A: App Defects (Mobile & Backend Eng)"]
+        A1["Midnight Date-Picker Drift"]
+        A2["Shuttle 2-Step UX Bloat"]
+        A3["Fleet Map Vehicle Clutter"]
     end
-    subgraph Bucket B: Ops Failures [Owner: Transport Ops + Driver App]
-        B1[Driver Background GPS Loss]
-        B2[Uncalibrated ETA Jumps]
-        B3[Silent Vehicle Re-routing]
+    subgraph BucketB ["Bucket B: Ops Failures (Transport Ops + Driver App)"]
+        B1["Driver Background GPS Loss"]
+        B2["Uncalibrated ETA Jumps"]
+        B3["Silent Vehicle Re-routing"]
     end
-    subgraph Bucket C: Policy Gaps [Owner: Customer Success + Product]
-        C1[Unverified No-Show Salary Deductions]
-        C2[Zero-Grace Geofence Drops]
-        C3[Black-Hole Escalation Blackout]
+    subgraph BucketC ["Bucket C: Policy Gaps (Customer Success + Product)"]
+        C1["Unverified No-Show Salary Deductions"]
+        C2["Zero-Grace Geofence Drops"]
+        C3["Black-Hole Escalation Blackout"]
     end
 ```
 

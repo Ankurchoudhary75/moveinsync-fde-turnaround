@@ -28,13 +28,13 @@ jobs:
 
       - name: Execute Ratings Pulse Telemetry Engine
         run: |
-          python ratings_pulse/ratings_pulse.py --app com.moveinsync.ets --count 1500 --out pulse_reports
+          python telemetry-engine/ratings_pulse.py --app com.moveinsync.ets --count 1500 --out telemetry-engine/pulse_out
 
       - name: Commit & Publish Weekly Ratings Digest
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action [Ratings Pulse]"
-          git add pulse_reports/
+          git add telemetry-engine/pulse_out/
           if git diff-index --quiet HEAD --; then
             echo "No new changes to commit."
           else
